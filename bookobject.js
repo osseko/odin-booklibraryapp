@@ -1,6 +1,8 @@
 function Status(read){
-  this.read = read;
+  this.read = "read";
 }
+
+
 
 function Book(title, author, genre, id, read) {
 
@@ -15,9 +17,9 @@ function Book(title, author, genre, id, read) {
 }
 
 //samplebooks
-const book1 = new Book("title1", "author1", "genre1", "bf6e770bf7f0", "read");
-const book2 = new Book("title2", "author2", "genre2", "7ce6556076c7", "read");
-const book3 = new Book("title3", "author3", "genre3", "4222c148fb64", "read");
+const book1 = new Book("title1", "author1", "genre1", "bf6e770bf7f0");
+const book2 = new Book("title2", "author2", "genre2", "7ce6556076c7");
+const book3 = new Book("title3", "author3", "genre3", "4222c148fb64");
 //
 
 let myLibrary = [book1, book2, book3];
@@ -30,6 +32,9 @@ Book.prototype.sayStatus = function(){
   return `book is ${this.read}`
 }
 console.log(book1.sayStatus());
+
+
+
 
 // function addBookToLibrary() {
 // }
